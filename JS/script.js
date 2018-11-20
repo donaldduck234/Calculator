@@ -4,7 +4,6 @@ const ongoingCalculation = document.getElementById('ongoing-calculation');
 const numbers = document.getElementsByClassName('numbers');
 let equalSwitch;
 
-
 //EVENT HANDLER
 keyboard.addEventListener('click', (e) => {
     if (e.target.className === 'numbers') {
@@ -29,6 +28,12 @@ keyboard.addEventListener('click', (e) => {
         display.innerHTML += e.target.innerHTML;
         ongoingCalculation.innerHTML += e.target.innerHTML;
     }
+//    if (equalSwitch) {
+//        display.innerHTML = 0;
+//        ongoingCalculation.innerHTML = 0;
+//        display.innerHTML += e.target.innerHTML;
+//        ongoingCalculation.innerHTML += e.target.innerHTML;
+//    }
 
 
 });
